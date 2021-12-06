@@ -1,10 +1,10 @@
 import React from 'react';
 
-const Footer = ({ fecha }) => {
+const Footer = (props) => {
 
     return (
         <footer>
-            <p>Todos los campeonatos de boquita {fecha} &copyright;</p>
+            <p>Todos los campeonatos de boquita {props.fecha} &copyright;</p>
         </footer>
     )
 }

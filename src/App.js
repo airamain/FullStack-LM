@@ -6,6 +6,8 @@ import Productos from './components/Productos.jsx';
 function App() {
   // creamos una lista de productos
 
+  // const {persona, setPersona} = useState();
+
   const [productos] = useState([
     { id: 1, nombre: 'Camisa de Boca', precio: 50 },
     { id: 2, nombre: 'Camisa de Racing', precio: 100 },
@@ -23,15 +25,15 @@ function App() {
         />
         <h2>Lista de Productos</h2>
         {
-          productos.map(camisa => (
+          productos.map(producto => (
             <Productos
-              key={camisa.id}
-              productos={camisa}
+              key={producto.id}
+              productos={producto}
             />
           ))
         }
         <Footer
-          fecha={fecha}
+          year={fecha}
         />
       </div>
     </>
